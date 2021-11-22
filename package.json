@@ -2,14 +2,14 @@
   "name": "occupywallstreet",
   "version": "1.0.0",
   "description": "**Edit a file, create a new file, and clone from Bitbucket in under 2 minutes**",
-  "main": "index.js",
+  "main": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "UX Mind",
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^2.26.7"
+    "browser-sync": "^2.27.7"
   },
   "dependencies": {
     "autoprefixer": "^9.8.5",
