@@ -95,7 +95,7 @@ $utilities: map-get-multiple(
 
 // 6. Components
 @import 'components/logo', 'components/wrapper', 'components/content', 'components/signup', 'components/primary-input',
-	'components/try-fastdup';
+	'components/try-fastdup', 'components/staff';
 
 // 7. Page-specific styles
 @import 'pages/home', 'pages/coming-soon';
