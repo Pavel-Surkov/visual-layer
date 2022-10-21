@@ -3488,6 +3488,13 @@ table {
 
 @font-face {
   font-family: 'Gilroy';
+  src: url("../fonts/Gilroy-RegularItalic.woff2") format("woff2"), url("../fonts/Gilroy-RegularItalic.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Gilroy';
   src: url("../fonts/Gilroy-Medium.woff2") format("woff2"), url("../fonts/Gilroy-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
@@ -3635,6 +3642,33 @@ table {
     .primary-input:focus + p {
       display: inline-block; }
 
+.try-fastdup {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(184px);
+      -ms-transform: translateX(184px);
+          transform: translateX(184px);
+  padding-left: 24px;
+  padding-bottom: 8px;
+  padding-top: 90px;
+  border-bottom: 1px solid #202020;
+  border-left: 1px solid #202020; }
+  .try-fastdup__btn {
+    padding: 13px 59px 9px 39px;
+    position: relative; }
+    .try-fastdup__btn::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: 38px;
+      -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+              transform: translateY(-50%);
+      width: 16px;
+      height: 16px;
+      background: url("../img/icons/github.svg") no-repeat 50%/cover; }
+
 .coming-soon__title {
   position: relative;
   display: inline-block;
@@ -3642,6 +3676,7 @@ table {
   .coming-soon__title::after {
     content: 'With something really cool';
     position: absolute;
+    font-style: italic;
     bottom: 14px;
     right: 6px;
     font-size: 1.6rem;

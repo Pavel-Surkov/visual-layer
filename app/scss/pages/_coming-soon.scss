@@ -6,6 +6,7 @@
 		&::after {
 			content: 'With something really cool';
 			position: absolute;
+			font-style: italic;
 			bottom: 14px;
 			right: 6px;
 			@include font(1.6rem, 1);

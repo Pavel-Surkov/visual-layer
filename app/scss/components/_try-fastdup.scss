@@ -1,0 +1,25 @@
+.try-fastdup {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(184px);
+	padding-left: 24px;
+	padding-bottom: 8px;
+	padding-top: 90px;
+	border-bottom: 1px solid $black-900;
+	border-left: 1px solid $black-900;
+	&__btn {
+		padding: 13px 59px 9px 39px;
+		position: relative;
+		&::after {
+			content: '';
+			position: absolute;
+			top: 50%;
+			right: 38px;
+			transform: translateY(-50%);
+			width: 16px;
+			height: 16px;
+			background: icon('github.svg') no-repeat 50% / cover;
+		}
+	}
+}
