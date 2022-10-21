@@ -88,13 +88,13 @@ $utilities: map-get-multiple(
 @import 'base/base', 'base/fonts', 'base/typography', 'base/helpers';
 
 // 4. Components
-@import 'components/button', 'components/title';
+@import 'components/button', 'components/title', 'components/label';
 
 // 5. Layout-related sections
 @import 'layout/header', 'layout/footer', 'layout/container';
 
 // 6. Components
-@import 'components/logo', 'components/wrapper', 'components/content';
+@import 'components/logo', 'components/wrapper', 'components/content', 'components/signup', 'components/primary-input';
 
 // 7. Page-specific styles
 @import 'pages/home', 'pages/coming-soon';

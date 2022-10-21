@@ -2,6 +2,7 @@
 	&__title {
 		position: relative;
 		display: inline-block;
+		margin-bottom: 64px;
 		&::after {
 			content: 'With something really cool';
 			position: absolute;

@@ -1,0 +1,20 @@
+.primary-input {
+	border: 0.7px solid $gray-300;
+	color: $dark-600;
+	border-radius: 5px;
+	@include font(1.4rem, calc(16 / 14));
+	font-weight: 300;
+	padding: 0.7857143em 1.142857em;
+	width: 100%;
+	&::placeholder {
+		color: $gray-300;
+		@include font(1.4rem, calc(16 / 14));
+		font-weight: 300;
+	}
+	&:focus {
+		border: 0.7px solid $dark-600;
+		& + p {
+			display: inline-block;
+		}
+	}
+}

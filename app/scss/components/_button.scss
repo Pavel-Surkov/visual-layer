@@ -1,0 +1,23 @@
+.btn {
+	display: inline-block;
+	padding: 12px 1em 10px;
+	background: transparent;
+	color: $black-900;
+	text-transform: uppercase;
+	letter-spacing: 0.02em;
+	@include font(1.8rem, calc(16 / 18));
+	text-align: center;
+	border-radius: 100px;
+	border: 1px solid $black-900;
+	text-decoration: none;
+	width: 100%;
+	font-weight: 500;
+	&-black {
+		background: $black-900;
+		color: $white;
+	}
+}
+
+.try-btn {
+	margin-top: 12px;
+}

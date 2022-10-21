@@ -6,5 +6,9 @@
 			@include font(9.6rem, calc(88 / 96));
 			letter-spacing: -0.07em;
 		}
+		&-m {
+			@include font(2.4rem, calc(32 / 24));
+			letter-spacing: -0.03em;
+		}
 	}
 }

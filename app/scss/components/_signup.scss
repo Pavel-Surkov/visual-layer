@@ -1,0 +1,29 @@
+.signup {
+	&-title {
+		margin-bottom: 24px;
+		max-width: 320px;
+	}
+	&-form {
+		display: grid;
+		grid-gap: 16px;
+		& .btn {
+			margin-top: 8px;
+		}
+	}
+	&-label {
+		width: 100%;
+		& p {
+			display: none;
+			color: $dark-600;
+			background: $white;
+			@include font(1.2rem, calc(16 / 12));
+			margin: 0;
+			padding: 0 4px;
+			font-weight: 300;
+			position: absolute;
+			top: 0;
+			left: 15px;
+			transform: translateY(-50%);
+		}
+	}
+}
