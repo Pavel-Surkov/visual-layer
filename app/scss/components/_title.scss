@@ -1,0 +1,10 @@
+.title {
+	font-weight: 400;
+	margin: 0;
+	&_size {
+		&-l {
+			@include font(9.6rem, calc(88 / 96));
+			letter-spacing: -0.07em;
+		}
+	}
+}

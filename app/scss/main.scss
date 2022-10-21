@@ -7,107 +7,97 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 
- html {
-  box-sizing: border-box;
-  -ms-overflow-style: scrollbar;
+html {
+	box-sizing: border-box;
+	-ms-overflow-style: scrollbar;
 }
 
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+	box-sizing: inherit;
 }
 
 $include-column-box-sizing: true !default;
 
-@import "grid/functions";
-@import "grid/variables";
+@import 'grid/functions';
+@import 'grid/variables';
 
-@import "grid/mixins/lists";
-@import "grid/mixins/breakpoints";
-@import "grid/mixins/container";
-@import "grid/mixins/grid";
-@import "grid/mixins/utilities";
+@import 'grid/mixins/lists';
+@import 'grid/mixins/breakpoints';
+@import 'grid/mixins/container';
+@import 'grid/mixins/grid';
+@import 'grid/mixins/utilities';
 
-@import "grid/vendor/rfs";
+@import 'grid/vendor/rfs';
 
-@import "grid/containers";
-@import "grid/grid";
+@import 'grid/containers';
+@import 'grid/grid';
 
-@import "grid/utilities";
+@import 'grid/utilities';
 
 // Only use the utilities we need
 // stylelint-disable-next-line scss/dollar-variable-default
 $utilities: map-get-multiple(
-  $utilities,
-  (
-    "display",
-    "order",
-    "flex",
-    "flex-direction",
-    "flex-grow",
-    "flex-shrink",
-    "flex-wrap",
-    "justify-content",
-    "align-items",
-    "align-content",
-    "align-self",
-    "margin",
-    "margin-x",
-    "margin-y",
-    "margin-top",
-    "margin-end",
-    "margin-bottom",
-    "margin-start",
-    "negative-margin",
-    "negative-margin-x",
-    "negative-margin-y",
-    "negative-margin-top",
-    "negative-margin-end",
-    "negative-margin-bottom",
-    "negative-margin-start",
-    "padding",
-    "padding-x",
-    "padding-y",
-    "padding-top",
-    "padding-end",
-    "padding-bottom",
-    "padding-start",
-  )
+	$utilities,
+	(
+		'display',
+		'order',
+		'flex',
+		'flex-direction',
+		'flex-grow',
+		'flex-shrink',
+		'flex-wrap',
+		'justify-content',
+		'align-items',
+		'align-content',
+		'align-self',
+		'margin',
+		'margin-x',
+		'margin-y',
+		'margin-top',
+		'margin-end',
+		'margin-bottom',
+		'margin-start',
+		'negative-margin',
+		'negative-margin-x',
+		'negative-margin-y',
+		'negative-margin-top',
+		'negative-margin-end',
+		'negative-margin-bottom',
+		'negative-margin-start',
+		'padding',
+		'padding-x',
+		'padding-y',
+		'padding-top',
+		'padding-end',
+		'padding-bottom',
+		'padding-start'
+	)
 );
 
-@import "grid/utilities/api";  
+@import 'grid/utilities/api';
 
 // 1. Configuration and helpers
-@import
-  'abstracts/variables',
-  'abstracts/functions',
-  'abstracts/mixins';
+@import 'abstracts/variables', 'abstracts/functions', 'abstracts/mixins';
 
 // 2. Vendors
-@import
-  'vendors/normalize';
+@import 'vendors/normalize';
 
 // 3. Base stuff
-@import
-  'base/base',
-  'base/fonts',
-  'base/typography',
-  'base/helpers';
+@import 'base/base', 'base/fonts', 'base/typography', 'base/helpers';
 
-// 4. Layout-related sections
-@import
-  'layout/header',
-  'layout/footer';
+// 4. Components
+@import 'components/button', 'components/title';
 
-// 5. Components
-@import
-  'components/button';
+// 5. Layout-related sections
+@import 'layout/header', 'layout/footer', 'layout/container';
 
-// 6. Page-specific styles
-@import
-  'pages/home';
+// 6. Components
+@import 'components/logo', 'components/wrapper', 'components/content';
 
-// 7. Themes
-@import
-  'themes/default';
+// 7. Page-specific styles
+@import 'pages/home', 'pages/coming-soon';
+
+// 8. Themes
+@import 'themes/default';

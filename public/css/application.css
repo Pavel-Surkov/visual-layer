@@ -3403,7 +3403,7 @@ strong {
 body {
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: 400;
-  color: #333;
+  color: #202020;
   font-size: 1.6rem;
   height: 100%;
   background: #fff; }
@@ -3507,3 +3507,43 @@ table {
   list-style-type: none;
   padding: 0;
   margin: 0; }
+
+.title {
+  font-weight: 400;
+  margin: 0; }
+  .title_size-l {
+    font-size: 9.6rem;
+    line-height: calc(88 / 96);
+    letter-spacing: -0.07em; }
+
+.header-wrapper {
+  padding-top: 30px; }
+
+.container {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  max-width: 1143px;
+  margin: 0 auto; }
+
+.logo {
+  display: inline-block; }
+
+.wrapper {
+  padding-top: 88px; }
+
+.content {
+  display: grid;
+  grid-template-columns: 357px calc(100% - 357px); }
+
+.coming-soon__title {
+  position: relative;
+  display: inline-block; }
+  .coming-soon__title::after {
+    content: 'With something really cool';
+    position: absolute;
+    bottom: 14px;
+    right: 6px;
+    font-size: 1.6rem;
+    line-height: 1;
+    letter-spacing: -0.05em;
+    font-weight: 400; }
