@@ -12,7 +12,7 @@
 
 @mixin font($size, $lineheight) {
 	font-size: $size;
-	line-height: calc($lineheight / $size);
+	line-height: $lineheight;
 }
 
 // @mixin font() {
