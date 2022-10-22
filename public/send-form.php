@@ -10,7 +10,7 @@ $email = $_POST['email'];
 $name = $_POST['name'];
 $company = $_POST['company'];
 
-$title = "New mail from APEXAVERSE";
+$title = "New mail from visual layer";
 $body = "
 <b>Email:</b> $email<br>
 <b>Name:</b> $name<br>
@@ -27,17 +27,17 @@ try {
     $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
 
     // Настройки вашей почты
-    $mail->Host       = 'premium233.web-hosting.com'; // SMTP сервера вашей почты
-    $mail->Username   = 'no-reply@apexaverse.com'; // Логин на почте
-    $mail->Password   = 'rmH.DB6Y]HCr'; // Пароль на почте
+    $mail->Host       = 'mail.hayfever.games'; // SMTP сервера вашей почты
+    $mail->Username   = 'admin@hayfever.games'; // Логин на почте
+    $mail->Password   = '6u*XM]A7i_k3'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
-    $mail->setFrom('no-reply@apexaverse.com', 'Apexaverse'); // Адрес самой почты и имя отправителя
+    $mail->setFrom('wordpress@visual.layer', $hfname); // Адрес самой почты и имя отправителя
 
     // Получатель письма
-    $mail->addAddress('landing@visual-layer.com');
+    $mail->addAddress('vaholes570@cadolls.com');
     
-    echo $body;
+    //echo $body;
 
     // Отправка сообщения
     $mail->isHTML(true);
@@ -45,12 +45,18 @@ try {
     $mail->Body = $body;    
     
     // Проверяем отравленность сообщения
-    if ($mail->send()) {$result = "success";} 
-    else {$result = "error";}
-    
+    if ($mail->send()) {
+        echo 'success';
+        $result = "success";
+        exit;
+    } 
+    else {
+        $result = "error";
+    }
 } catch (Exception $e) {
     $result = "error";
     $status = "Сообщение не было отправлено. Причина ошибки: {$mail->ErrorInfo}";
+    echo $status;
 }
     
 $addr = $_SERVER['HTTP_REFERER'];

@@ -3,6 +3,20 @@
 document.addEventListener(`DOMContentLoaded`, () => {});
 
 // JQUERY
+$('.signup-form').submit(function (e) {
+  e.preventDefault(); // avoid to execute the actual submit of the form.
+
+  var form = $('.signup-form');
+
+  $.ajax({
+    type: 'POST',
+    url: 'send-form.php',
+    data: form.serialize(), // serializes the form's elements.
+    success: function (data) {
+      console.log(data); // show response from the php script.
+    },
+  });
+});
 
 // Form popup
 const signupForm = document.querySelector('#signup-form');
