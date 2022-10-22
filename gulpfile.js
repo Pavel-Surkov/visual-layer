@@ -45,7 +45,7 @@ gulp.task('php', function () {
 gulp.task('phpmailer', function () {
   return gulp
     .src('app/phpmailer/**', { since: gulp.lastRun('phpmailer') })
-    .pipe(gulp.dest('public'));
+    .pipe(gulp.dest('public/phpmailer'));
 });
 
 gulp.task(
