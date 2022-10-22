@@ -35,7 +35,7 @@ try {
     $mail->setFrom('wordpress@visual.layer', $hfname); // Адрес самой почты и имя отправителя
 
     // Получатель письма
-    $mail->addAddress('vaholes570@cadolls.com');
+    $mail->addAddress('xzyguu@mailto.plus');
     
     //echo $body;
 
