@@ -47,7 +47,7 @@
 				<div class="content">
 					<div class="signup">
 						<h2 class="title title_size-m signup-title">Sign up for fastdup Enterprise early release</h2>
-						<form class="signup-form">
+						<form id="signup-form" class="signup-form">
 							<label class="label signup-label">
 								<input class="primary-input" type="email" placeholder="Email" required />
 								<p>Email</p>
@@ -102,6 +102,20 @@
 	<footer class="footer">
 	</footer>
 	<!-- End footer -->
+	<!-- Begin Popup -->
+	<div id="signup-modal" class="signup-popup">
+		<div class="signup-popup__wrapper">
+			<button id="signup-close" class="close">Close</button>
+			<h2 class="title title_size-m text-center">Congratulations!</h2>
+			<h2 class="title title_size-m text-center	">You have successfully registered!</h2>
+			<div class="signup-popup__subtitle">
+				<p>You will be among the first to know about our launch.</p>
+			</div>
+			<button class="btn btn-black">Great!</button>
+		</div>
+	</div>
+	<!-- End Popup -->
+	<div id="blocker" class="blocker"></div>
 	<!-- BEGIN MOBILE LAYOUT -->
 	<!-- END MOBILE LAYOUT -->
 	<!-- BEGIN scripts -->

@@ -1,0 +1,74 @@
+.signup-popup {
+	z-index: 2;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border: 1px solid $black-900;
+	width: calc(100% - 48px);
+	max-width: 733px;
+	pointer-events: none;
+	opacity: 0;
+	transition: opacity 0.3s;
+	&_opened {
+		opacity: 1;
+		pointer-events: auto;
+	}
+	& .close {
+		position: absolute;
+		top: 32px;
+		right: 32px;
+		@include font(1.2rem, calc(16 / 12));
+		letter-spacing: 0.02em;
+		text-transform: uppercase;
+		background: transparent;
+		font-weight: 500;
+		&:hover {
+			font-weight: 700;
+		}
+		&:active {
+			font-weight: 500;
+		}
+	}
+	& .btn-black {
+		width: 100%;
+		max-width: 294px;
+		margin-top: 32px;
+	}
+	&__wrapper {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 120px 24px;
+		background: $light-100;
+	}
+	&__subtitle {
+		margin-top: 16px;
+		& p {
+			@include font(1.6rem, 1);
+			letter-spacing: -0.05em;
+			margin: 0;
+		}
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.signup-popup {
+		& .title_size-m {
+			@include font(2rem, calc(32 / 20));
+			letter-spacing: -0.03em;
+		}
+		&__subtitle {
+			max-width: 200px;
+			& p {
+				text-align: center;
+				@include font(1.4rem, calc(16 / 14));
+				letter-spacing: -0.05em;
+			}
+		}
+		& .btn-black {
+			margin-top: 40px;
+		}
+	}
+}
