@@ -38,7 +38,7 @@ gulp.task('assets', function () {
 
 gulp.task('php', function () {
   return gulp
-    .src('send-form.php', { since: gulp.lastRun('php') })
+    .src('app/send-form.php', { since: gulp.lastRun('php') })
     .pipe(gulp.dest('public'));
 });
 
@@ -60,7 +60,7 @@ gulp.task('watch', function () {
   gulp.watch('app/scss/**/*.*', gulp.series('styles'));
   gulp.watch('app/js/**/*.*', gulp.series('scripts'));
   gulp.watch('app/assets/**/*.*', gulp.series('assets'));
-  gulp.watch('send-form.php', gulp.series('php'));
+  gulp.watch('app/send-form.php', gulp.series('php'));
   gulp.watch('app/phpmailer/*.*', gulp.series('phpmailer'));
 });
 
