@@ -8,20 +8,21 @@
 	@include font(1.8rem, calc(16 / 18));
 	text-align: center;
 	border-radius: 100px;
-	border: 1px solid $black-900;
+	// border: 1px solid $black-900;
+	border: none;
 	text-decoration: none;
 	width: 100%;
 	font-weight: 500;
-	&:hover {
-		color: $white;
-		border-color: $black-900;
-		background: $black-900;
-	}
-	&:active {
-		color: $black-900;
-		border-color: $black-900;
-		background: $white;
-	}
+	// &:hover {
+	// 	color: $white;
+	// 	border-color: $black-900;
+	// 	background: $black-900;
+	// }
+	// &:active {
+	// 	color: $black-900;
+	// 	border-color: $black-900;
+	// 	background: $white;
+	// }
 	&-black {
 		background: $black-900;
 		color: $light-100;

@@ -3526,18 +3526,10 @@ table {
   line-height: calc(16 / 18);
   text-align: center;
   border-radius: 100px;
-  border: 1px solid #202020;
+  border: none;
   text-decoration: none;
   width: 100%;
   font-weight: 500; }
-  .btn:hover {
-    color: #fff;
-    border-color: #202020;
-    background: #202020; }
-  .btn:active {
-    color: #202020;
-    border-color: #202020;
-    background: #fff; }
   .btn-black {
     background: #202020;
     color: #fdfdfd; }
@@ -3746,23 +3738,31 @@ table {
   border-bottom: 1px solid #202020;
   border-left: 1px solid #202020; }
   .try-fastdup__btn {
-    padding: 13px 59px 9px 39px;
+    padding: 0;
+    padding-right: 20px;
     position: relative; }
+    .try-fastdup__btn::before {
+      content: 'For now,';
+      position: absolute;
+      bottom: calc(100% + 5px);
+      left: 0;
+      font-size: 1.6rem;
+      line-height: 1;
+      letter-spacing: -0.05em;
+      font-weight: 400;
+      color: #202020;
+      text-transform: none; }
     .try-fastdup__btn::after {
       content: '';
       position: absolute;
       top: 50%;
-      right: 38px;
+      right: 0;
       -webkit-transform: translateY(-50%);
           -ms-transform: translateY(-50%);
               transform: translateY(-50%);
       width: 16px;
       height: 16px;
-      background: url("../img/icons/github.svg") no-repeat 50%/cover; }
-    .try-fastdup__btn:hover::after {
       background: url("../img/icons/github-black.svg") no-repeat 50%/cover; }
-    .try-fastdup__btn:active::after {
-      background: url("../img/icons/github.svg") no-repeat 50%/cover; }
 
 @media screen and (max-width: 991px) {
   .try-fastdup {

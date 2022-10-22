@@ -9,23 +9,29 @@
 	border-bottom: 1px solid $black-900;
 	border-left: 1px solid $black-900;
 	&__btn {
-		padding: 13px 59px 9px 39px;
+		padding: 0;
+		padding-right: 20px;
 		position: relative;
+		&::before {
+			content: 'For now,';
+			position: absolute;
+			bottom: calc(100% + 5px);
+			left: 0;
+			@include font(1.6rem, 1);
+			letter-spacing: -0.05em;
+			font-weight: 400;
+			color: $black-900;
+			text-transform: none;
+		}
 		&::after {
 			content: '';
 			position: absolute;
 			top: 50%;
-			right: 38px;
+			right: 0;
 			transform: translateY(-50%);
 			width: 16px;
 			height: 16px;
-			background: icon('github.svg') no-repeat 50% / cover;
-		}
-		&:hover::after {
 			background: icon('github-black.svg') no-repeat 50% / cover;
-		}
-		&:active::after {
-			background: icon('github.svg') no-repeat 50% / cover;
 		}
 	}
 }
