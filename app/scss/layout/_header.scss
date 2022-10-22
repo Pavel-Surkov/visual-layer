@@ -3,3 +3,30 @@
 		padding-top: 30px;
 	}
 }
+
+@media screen and (max-width: 991px) {
+	.header {
+		&-fastdup {
+			& p {
+				text-align: center;
+				max-width: 47px;
+				@include font(1.4rem, calc(20 / 14));
+				letter-spacing: -0.03em;
+				font-weight: 400;
+				margin: 0;
+			}
+			&-link {
+				color: $black-900;
+				text-decoration: none;
+				&:hover,
+				&:active,
+				&:visited {
+					color: $black-900;
+				}
+			}
+			&-img {
+				margin-right: 8px;
+			}
+		}
+	}
+}

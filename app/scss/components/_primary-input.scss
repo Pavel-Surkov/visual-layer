@@ -1,6 +1,6 @@
 .primary-input {
 	border: 0.7px solid $gray-300;
-	color: $dark-600;
+	color: $black-900;
 	border-radius: 5px;
 	@include font(1.4rem, calc(16 / 14));
 	font-weight: 300;
@@ -11,10 +11,16 @@
 		@include font(1.4rem, calc(16 / 14));
 		font-weight: 300;
 	}
+	&:hover {
+		border: 0.7px solid $dark-600;
+	}
 	&:focus {
 		border: 0.7px solid $dark-600;
 		& + p {
 			display: inline-block;
+		}
+		&::placeholder {
+			color: transparent;
 		}
 	}
 }

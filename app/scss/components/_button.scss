@@ -1,7 +1,7 @@
 .btn {
 	display: inline-block;
 	padding: 12px 1em 10px;
-	background: transparent;
+	background: $white;
 	color: $black-900;
 	text-transform: uppercase;
 	letter-spacing: 0.02em;
@@ -12,12 +12,43 @@
 	text-decoration: none;
 	width: 100%;
 	font-weight: 500;
+	&:hover {
+		color: $white;
+		border-color: $black-900;
+		background: $black-900;
+	}
+	&:active {
+		color: $black-900;
+		border-color: $black-900;
+		background: $white;
+	}
 	&-black {
 		background: $black-900;
-		color: $white;
+		color: $light-100;
+		&:hover {
+			background: $white;
+			color: $black-900;
+			border-color: $black-900;
+		}
+		&:active {
+			color: $white;
+			border-color: $black-900;
+			background: $black-900;
+		}
 	}
 }
 
 .try-btn {
 	margin-top: 12px;
+}
+
+@media scrrn and (max-width: 991px) {
+	.btn {
+		@include font(1.6rem, 1);
+		padding-top: 0.75em;
+		padding-bottom: 0.625em;
+	}
+	.try-btn {
+		margin-top: 16px;
+	}
 }

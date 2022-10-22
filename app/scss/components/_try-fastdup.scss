@@ -21,5 +21,17 @@
 			height: 16px;
 			background: icon('github.svg') no-repeat 50% / cover;
 		}
+		&:hover::after {
+			background: icon('github-black.svg') no-repeat 50% / cover;
+		}
+		&:active::after {
+			background: icon('github.svg') no-repeat 50% / cover;
+		}
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.try-fastdup {
+		display: none;
 	}
 }

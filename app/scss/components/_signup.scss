@@ -27,3 +27,13 @@
 		}
 	}
 }
+
+@media screen and (max-width: 991px) {
+	.signup {
+		&-form {
+			& .btn {
+				margin-top: 16px;
+			}
+		}
+	}
+}

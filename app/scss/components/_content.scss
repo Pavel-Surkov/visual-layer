@@ -3,3 +3,10 @@
 	grid-template-columns: 357px calc(100% - 357px);
 	padding-bottom: 122px;
 }
+
+@media screen and (max-width: 991px) {
+	.content {
+		grid-template-columns: 100%;
+		padding-bottom: 120px;
+	}
+}
